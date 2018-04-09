@@ -1,0 +1,11 @@
+[Unit]
+Description=Xiaoqiang Manual gitbook service
+
+[Service]
+Type=simple
+User=bwbot
+WorkingDirectory=/home/bwbot/data/src/gitbook/xq-manual
+ExecStart=/usr/local/bin/gitbook --port 22229 serve
+
+[Install]
+WantedBy=multi-user.target

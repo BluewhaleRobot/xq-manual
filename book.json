@@ -1,0 +1,50 @@
+{
+  "title": "小强用户手册",
+  "description": "小强用户手册包含小强的一些基本功能的使用教程，方便您熟悉和使用小强。同时也包含了小强的维护知识，使得用户可以更好的使用设备。",
+  "language": "zh",
+  "gitbook": "3.x.x",
+  "plugins": [
+    "github",
+    "editlink",
+    "prism",
+    "downloadpdf",
+    "yahei",
+    "katex",
+    "-search"
+  ],
+  "pluginsConfig": {
+    "github": {
+      "url": "https://github.com/BlueWhaleRobot/xq-manual"
+    },
+    "editlink": {
+      "base": "https://github.com/BlueWhaleRobot/xq-manual/edit/master",
+      "label": "编辑本页"
+    },
+    "sharing": {
+      "weibo": true,
+      "twitter": false,
+      "facebook": false
+    },
+    "downloadpdf": {
+      "base": "https://doc.bwbot.org/pdf/xq-manual",
+      "label": "下载PDF",
+      "multilingual": false
+    },
+    "fontSettings": {
+      "theme": "white",
+      "family": "msyh",
+      "size": 2
+    }
+  },
+  "pdf": {
+    "pageNumbers": true,
+    "fontSize": 12,
+    "paperSize": "a4",
+    "margin": {
+      "right": 30,
+      "left": 30,
+      "top": 30,
+      "bottom": 50
+    }
+  }
+}
