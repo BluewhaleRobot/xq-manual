@@ -10,7 +10,8 @@
     "downloadpdf",
     "yahei",
     "katex",
-    "-search"
+    "-search",
+    "baiduana"
   ],
   "pluginsConfig": {
     "github": {
@@ -34,6 +35,9 @@
       "theme": "white",
       "family": "msyh",
       "size": 2
+    },
+    "baidu": {
+        "token": "ff8acfbe8b4cf5953247e05866837776"
     }
   },
   "pdf": {
