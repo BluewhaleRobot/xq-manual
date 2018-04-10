@@ -1,16 +1,15 @@
 # Summary
 
-## 开始使用
-  - [开始使用](start/get-start.md)
-    - [设置网络](start/network.md)
-    - [产品组装](start/assemble.md)
-    - [状态检查](start/status.md)
-    - [远程遥控](start/remote.md)
-    - [视频传输](start/video.md)
-    - [软件整体结构和说明](start/intro.md)
-    - [ROS入门手册](start/ros-intro.md)
+### [开始使用](start/start.md)
+  - [1. 设置网络](start/network.md)
+  - [2. 产品组装](start/assemble.md)
+  - [3. 状态检查](start/status.md)
+  - [4. 远程遥控](start/remote.md)
+  - [5. 视频传输](start/video.md)
+  - [6. 软件整体结构和说明](start/intro.md)
+  - [7. ROS入门手册](start/ros-intro.md)
 
-## 小强ROS机器人教程
+### 小强ROS机器人教程
   - [1. 基础操作介绍]($nodebb/topic/26.md)
   - [2. 蓝鲸智能开源软件仓库的使用和ROS开机启动任务的配置]($nodebb/topic/27.md)
   - [3. 在rviz中显示小强机器人模型]($nodebb/topic/24.md)
@@ -37,24 +36,25 @@
 
 
 
-## 维护
+### 维护
   - [充电](maintain/charge.md)
   - [车轮松动打滑](maintain/wheel.md)
-  - [小强底盘固件的自动更新升级方法](maintain/upgrade-bin.md)
-  - [升级底盘ros驱动包xqserial_server](maintain/upgrade-driver.md)
-  - [重新校准小车底盘IMU](maintain/imu.md)
-  - [小强系统镜像](maintain/iso.md)
-## 其他
-  - [Ubuntu设置静态IP](topic/1.md)
-  - [视觉导航路径编辑器使用教程](topic/1.md)
-  - [小强的远程协助功能](topic/1.md)
-  - [小强ROS机器人障碍物识别演示](topic/1.md)
-  - [视觉导航在履带车中的运用](topic/1.md)
-  - [Google激光雷达slam算法Cartographer的安装及bag包demo测试](topic/1.md)
-  - [原装和国产ps3手柄ros驱动程序](topic/1.md)
-  - [升级软件包以支持小强图传遥控app](topic/1.md)
+  - [小强底盘固件的自动更新升级方法]($nodebb/topic/18.md)
+  - [升级底盘ros驱动包xqserial_server]($nodebb/topic/165.md)
+  - [重新校准小车底盘IMU]($nodebb/topic/113.md)
+  - [小强系统镜像]($nodebb/topic/232.md)
 
-## 附件
-  - [1. 小车系统框架图](topic/1.md)
-  - [2. 电气布线图](topic/1.md)
-  - [3. 小强电脑与stm32底层通讯协议](topic/1.md)
+### 其他
+  - [Ubuntu设置静态IP]($nodebb/topic/171.md)
+  - [视觉导航路径编辑器使用教程]($nodebb/topic/57.md)
+  - [小强的远程协助功能]($nodebb/topic/61.md)
+  - [小强ROS机器人障碍物识别演示]($nodebb/topic/95.md)
+  - [视觉导航在履带车中的运用]($nodebb/topic/108.md)
+  - [Google激光雷达slam算法Cartographer的安装及bag包demo测试]($nodebb/topic/136.md)
+  - [原装和国产ps3手柄ros驱动程序]($nodebb/topic/169.md)
+  - [升级软件包以支持小强图传遥控app]($nodebb/topic/161.md)
+
+### 附件
+  - [1. 小车系统框架图](extra/frame.md)
+  - [2. 电气布线图](extra/electric.md)
+  - [3. 小强电脑与stm32底层通讯协议]($nodebb/topic/19.md)
