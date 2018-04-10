@@ -39,23 +39,22 @@
 ### 维护
   - [充电](maintain/charge.md)
   - [车轮松动打滑](maintain/wheel.md)
-  - [小强底盘固件的自动更新升级方法]($nodebb/topic/18.md)
-  - [升级底盘ros驱动包xqserial_server]($nodebb/topic/165.md)
-  - [重新校准小车底盘IMU]($nodebb/topic/113.md)
-  - [小强系统镜像]($nodebb/topic/232.md)
-
+  - [小强底盘固件的自动更新升级方法](topic/18.md)
+  - [升级底盘ros驱动包xqserial_server](topic/165.md)
+  - [重新校准小车底盘IMU](topic/113.md)
+  - [小强系统镜像](topic/232.md)
 
 ### 其他
-  - [Ubuntu设置静态IP](topic/1.md)
-  - [视觉导航路径编辑器使用教程](topic/1.md)
-  - [小强的远程协助功能](topic/1.md)
-  - [小强ROS机器人障碍物识别演示](topic/1.md)
-  - [视觉导航在履带车中的运用](topic/1.md)
-  - [Google激光雷达slam算法Cartographer的安装及bag包demo测试](topic/1.md)
-  - [原装和国产ps3手柄ros驱动程序](topic/1.md)
-  - [升级软件包以支持小强图传遥控app](topic/1.md)
+  - [Ubuntu设置静态IP](topic/171.md)
+  - [视觉导航路径编辑器使用教程](topic/57.md)
+  - [小强的远程协助功能](topic/61.md)
+  - [小强ROS机器人障碍物识别演示](topic/95.md)
+  - [视觉导航在履带车中的运用](topic/108.md)
+  - [Google激光雷达slam算法Cartographer的安装及bag包demo测试](topic/136.md)
+  - [原装和国产ps3手柄ros驱动程序](topic/169.md)
+  - [升级软件包以支持小强图传遥控app](topic/161.md)
 
 ### 附件
-  - [1. 小车系统框架图](topic/1.md)
-  - [2. 电气布线图](topic/1.md)
-  - [3. 小强电脑与stm32底层通讯协议](topic/1.md)
+  - [1. 小车系统框架图](extra/frame.md)
+  - [2. 电气布线图](extra/electric.md)
+  - [3. 小强电脑与stm32底层通讯协议](topic/19.md)
