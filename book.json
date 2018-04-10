@@ -11,7 +11,7 @@
     "yahei",
     "katex",
     "-search",
-    "baiduana"
+    "devops"
   ],
   "pluginsConfig": {
     "github": {
@@ -36,8 +36,8 @@
       "family": "msyh",
       "size": 2
     },
-    "baidu": {
-        "token": "ff8acfbe8b4cf5953247e05866837776"
+    "devops": {
+        "bd_token": "ff8acfbe8b4cf5953247e05866837776"
     }
   },
   "pdf": {
