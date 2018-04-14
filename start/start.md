@@ -120,6 +120,6 @@ slam算法采用的是ORB_SLAM，这个算法目前还无法用于实际的生�
 最后就是一些工具类软件了。比如控制小车移动的 nav_test control.py，显示系统状态的system monitor。
 
 
-# <a id="ros-intro"></a>ROS入门手册
+# <a id="rosintro"></a>ROS入门手册
 
 [Learning ROS for Robotics Programming - Second Edition.pdf](http://pan.baidu.com/s/1ge6ffZt)。这本教程很基础、很全面，虽然以Hydro版本为例，但是也完全兼容jade版本，代码实例中只需将书中的Hydro字符串替换成jade即可。请重点阅读本书的第二章和第三章。
