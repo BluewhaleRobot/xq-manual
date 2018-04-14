@@ -1,6 +1,6 @@
 # Summary
 
-### [开始使用](start/start.md#start)
+### 一. [开始使用](start/start.md#start)
   - [1. 设置网络](start/start.md#network)
   - [2. 产品组装](start/start.md#assemble)
   - [3. 状态检查](start/start.md#status)
@@ -9,7 +9,7 @@
   - [6. 软件整体结构和说明](start/start.md#intro)
   - [7. ROS入门手册](topic/109.md)
 
-### 小强ROS机器人教程
+### 二. 小强ROS机器人教程
   - [1. 基础操作介绍]($nodebb/topic/26.md)
   - [2. 蓝鲸智能开源软件仓库的使用和ROS开机启动任务的配置]($nodebb/topic/27.md)
   - [3. 在rviz中显示小强机器人模型]($nodebb/topic/24.md)
@@ -21,8 +21,8 @@
   - [9. 使用rostopic控制kinect的俯仰角度]($nodebb/topic/114.md)
   - [10. 使用kinect进行自主移动避障]($nodebb/topic/115.md)
   - [11. kinect跟随包turtlebot_follower]($nodebb/topic/176.md)
-  - [12. ROS显示kinect2代的点云]($nodebb/topic/113.md)
-  - [13. rplidar二代激光雷达的使用暨利用udev给小车增加串口设备]($nodebb/topic/134.md)
+  - [12. ROS显示kinect2代的点云]($nodebb/topic/133.md)
+  - [13. rplidar二代激光雷达的使用和利用udev给小车增加串口设备]($nodebb/topic/134.md)
   - [14. 在gmapping下使用激光雷达rplidar a2进行建图]($nodebb/topic/164.md)
   - [15. AMCL导航测试]($nodebb/topic/166.md)
   - [16. 大范围激光雷达slam与实时回路闭合测试]($nodebb/topic/137.md)
@@ -36,7 +36,7 @@
 
 
 
-### 维护
+### 三. 维护
   - [充电](maintain/charge.md)
   - [车轮松动打滑](maintain/wheel.md)
   - [小强底盘固件的自动更新升级方法]($nodebb/topic/18.md)
@@ -44,7 +44,7 @@
   - [重新校准小车底盘IMU]($nodebb/topic/113.md)
   - [小强系统镜像]($nodebb/topic/232.md)
 
-### 其他
+### 四. 其他
   - [Ubuntu设置静态IP]($nodebb/topic/171.md)
   - [视觉导航路径编辑器使用教程]($nodebb/topic/57.md)
   - [小强的远程协助功能]($nodebb/topic/61.md)
