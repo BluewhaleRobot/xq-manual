@@ -7,7 +7,7 @@
   - [4. 远程遥控](start/start.md#remote)
   - [5. 视频传输](start/start.md#video)
   - [6. 软件整体结构和说明](start/start.md#intro)
-  - [7. ROS入门手册](topic/109.md)
+  - [7. ROS入门手册](topic/start.md#intro-ros)
 
 ### 二. 小强ROS机器人教程
   - [1. 基础操作介绍]($nodebb/topic/26.md)
