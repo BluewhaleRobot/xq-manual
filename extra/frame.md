@@ -4,4 +4,4 @@
 <br>
 <br>
 <br>
-![xq framework](../images/xq-frame.png)
+![xq framework](/images/xq-frame.png)

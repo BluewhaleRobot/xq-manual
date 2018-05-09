@@ -1,6 +1,6 @@
 #车轮松动打滑
 
-![wheel](../images/wheel.png)
+![wheel](/images/wheel.png)
 <br>
 <br>
 <br>

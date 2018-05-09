@@ -7,4 +7,4 @@
 <br>
 <br>
 
-![electric](../images/electric.png)
+![electric](/images/electric.png)

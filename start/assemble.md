@@ -4,7 +4,7 @@
 <br>
 <br>
 <br>
-![assemble image](../images/assemble.png)
+![assemble image](/images/assemble.png)
 <br>
 <br>
 <br>

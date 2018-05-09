@@ -1,13 +1,6 @@
 # Summary
 
 ### 一. [开始使用](start/start.md#start)
-  - [1. 设置网络](start/start.md#network)
-  - [2. 产品组装](start/start.md#assemble)
-  - [3. 状态检查](start/start.md#status)
-  - [4. 远程遥控](start/start.md#remote)
-  - [5. 视频传输](start/start.md#video)
-  - [6. 软件整体结构和说明](start/start.md#intro)
-  - [7. ROS入门手册](start/start.md#rosintro)
 
 ### 二. 小强ROS机器人教程
   - [1. 基础操作介绍]($nodebb/topic/26.md)
