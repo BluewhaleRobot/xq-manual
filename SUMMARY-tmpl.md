@@ -1,10 +1,8 @@
 # Summary
 
-## 引言
-  * [引言](README.md)
+* [引言](README.md)
 
-## 一. [开始使用](start/start.md#start)
-  * [开始使用](start/start.md#start)
+* [一. 开始使用](start/start.md#start)
 
 ## 二. 小强ROS机器人教程
   - [1. 基础操作介绍]($nodebb/topic/26.md)
