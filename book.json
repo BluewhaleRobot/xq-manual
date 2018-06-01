@@ -11,8 +11,10 @@
     "yahei",
     "katex",
     "search",
-    "-live-reload",
-    "anchor-navigation-ex"
+    "include-codeblock",
+    "anchor-navigation-ex",
+    "randoms-versions",
+    "-live-reload"
   ],
   "pluginsConfig": {
     "github": {
@@ -36,6 +38,9 @@
       "theme": "white",
       "family": "msyh",
       "size": 2
+    },
+    "versions": {
+      "host": "https://xq-manual.bwbot.org"
     },
     "anchor-navigation-ex": {
       "showLevel": false
