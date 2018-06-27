@@ -28,6 +28,8 @@
   - [21. 获取usb摄像头30fps的1080p图像流及120fps的VGA分辨率图像流]($nodebb/topic/145.md)
   - [22. 操作6自由度机械臂]($nodebb/topic/97.md)
   - [23. ROS入门手册]($nodebb/topic/109.md)
+  - [24. 在小强上使用伽利略视觉导航系统]($nodebb/topic/488.md)
+  - [25. 在小强上使用语音识别和语音合成功能]($nodebb/topic/492.md)
 
 
 ## 三. 维护
@@ -47,6 +49,7 @@
   - [Google激光雷达slam算法Cartographer的安装及bag包demo测试]($nodebb/topic/136.md)
   - [原装和国产ps3手柄ros驱动程序]($nodebb/topic/169.md)
   - [升级软件包以支持小强图传遥控app]($nodebb/topic/161.md)
+  - [小强自检程序]($nodebb/topic/245.md)
 
 ## 附件
   - [1. 小车系统框架图](extra/frame.md)
