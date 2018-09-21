@@ -68,7 +68,7 @@ brightness: 0
 power: 12.34432
 ```
 
-其中imageStatus表示摄像头是否工作正常。odomStatus表示底层驱动时候工作正常。Orb相关的三个变量是视觉导航相关的状态，可以不用管（如果对这方面感兴趣可以在论坛里进行交流）。brightness是摄像头的亮度，power是当前电池的电压值，如果无法读取则是0.
+其中imageStatus表示摄像头是否工作正常。odomStatus表示底层驱动时候工作正常。orb相关的三个变量是视觉导航相关的状态，可以不用管（如果对这方面感兴趣可以在论坛里进行交流）。brightness是摄像头的亮度，power是当前电池的电压值，如果无法读取则是0.
 
 # <a id="remote"></a>远程遥控
 
@@ -86,30 +86,6 @@ rosrun nav_test control.py
 
 现在就可以通过方向键来控制小强的移动了。空格键是停止。Ctrl + C 退出程序。
 
-
-# <a id="video"></a>视频传输
-
-小强的视频也是可以远程传输的。在本地打开一个终端输入
-
-```bash
-export ROS_MASTER_URI=http://xiaoqiang-desktop:11311
-```
-
-然后在本地系统的/etc/hosts文件内添加小强的ip
-
-```
-192.168.X.X  xiaoqiang-desktop
-```
-
-输入下述命令开始显示摄像头视频
-
-```bash
-rosrun image_view image_view image:=/camera_node/image_raw  _image_transport:=compressed
-```
-
-如果一切正常就能够看到当前小强的摄像头画面了。
-
-
 # <a id="intro"></a>软件整体结构和说明
 
 小强的软件构建于ROS之上。程序主要包含有底层驱动，导航算法，slam算法。
@@ -122,4 +98,4 @@ slam算法采用的是ORB_SLAM，这个算法目前还无法用于实际的生�
 
 # <a id="rosintro"></a>ROS入门手册
 
-[Learning ROS for Robotics Programming - Second Edition.pdf](http://pan.baidu.com/s/1ge6ffZt)。这本教程很基础、很全面，虽然以Hydro版本为例，但是也完全兼容jade版本，代码实例中只需将书中的Hydro字符串替换成jade即可。请重点阅读本书的第二章和第三章。
+[Learning ROS for Robotics Programming - Second Edition.pdf](http://pan.baidu.com/s/1ge6ffZt)。这本教程很基础、很全面，虽然以Hydro版本为例，但是也完全兼容kinetic版本，代码实例中只需将书中的Hydro字符串替换成kinetic即可。请重点阅读本书的第二章和第三章。
