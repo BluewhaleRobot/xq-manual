@@ -98,4 +98,4 @@ slam算法采用的是ORB_SLAM，这个算法目前还无法用于实际的生�
 
 # <a id="rosintro"></a>ROS入门手册
 
-[Learning ROS for Robotics Programming - Second Edition.pdf](http://pan.baidu.com/s/1ge6ffZt)。这本教程很基础、很全面，虽然以Hydro版本为例，但是也完全兼容kinetic版本，代码实例中只需将书中的Hydro字符串替换成kinetic即可。请重点阅读本书的第二章和第三章。
+[Learning ROS for Robotics Programming - Second Edition.pdf](http://139.199.64.153/media/Learning+ROS+for+Robotics+Programming+-+Second+Edition.pdf)。这本教程很基础、很全面，虽然以Hydro版本为例，但是也完全兼容kinetic版本，代码实例中只需将书中的Hydro字符串替换成kinetic即可。请重点阅读本书的第二章和第三章。
