@@ -39,6 +39,7 @@
   - [升级底盘ros驱动包xqserial_server](topic/165.md)
   - [重新校准小车底盘IMU](topic/113.md)
   - [小强系统镜像](topic/232.md)
+  - [如何恢复小强的软件包](topic/686.md)
 
 ## 四. 其他
   - [Ubuntu设置静态IP](topic/171.md)

@@ -39,6 +39,7 @@
   - [升级底盘ros驱动包xqserial_server]($nodebb/topic/165.md)
   - [重新校准小车底盘IMU]($nodebb/topic/113.md)
   - [小强系统镜像]($nodebb/topic/232.md)
+  - [如何恢复小强的软件包]($nodebb/topic/686.md)
 
 ## 四. 其他
   - [Ubuntu设置静态IP]($nodebb/topic/171.md)
