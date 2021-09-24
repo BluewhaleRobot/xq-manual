@@ -24,13 +24,15 @@
   - [17. 利用ORB_SLAM2建立环境三维模型]($nodebb/topic/60.md)
   - [18. 利用DSO_SLAM建立环境三维模型]($nodebb/topic/131.md)
   - [19. NLlinepatrol_planner的简单使用]($nodebb/topic/87.md)
-  - [20. 获取小车视觉里程计并在rviz中显示小车轨迹]($nodebb/topic/20.md)
   - [21. 获取usb摄像头30fps的1080p图像流及120fps的VGA分辨率图像流]($nodebb/topic/145.md)
   - [22. 操作6自由度机械臂]($nodebb/topic/97.md)
   - [23. ROS入门手册]($nodebb/topic/109.md)
-  - [24. 在小强上使用伽利略视觉导航系统]($nodebb/topic/488.md)
-  - [25. 在小强上使用语音识别和语音合成功能]($nodebb/topic/492.md)
-
+  - [24. 在小强上使用语音识别和语音合成功能]($nodebb/topic/492.md)
+  - [25. 自动充电功能包的使用和实现原理]($nodebb/topic/501.md)
+  - [26. 使用Intel RealSense D400系列深度摄像头进行自主移动避障]($nodebb/topic/641.md)
+  - [27. 安装使用zed相机cpu版本ros驱动]($nodebb/topic/646.md)
+  - [28. 使用depthimage_to_laserscan包将kinect深度图像转换成2d激光雷达话题]($nodebb/topic/765.md)
+  - [29. 使用ps4手柄控制小车移动]($nodebb/topic/16456.md)
 
 ## 三. 维护
   - [充电](maintain/charge.md)
@@ -40,6 +42,8 @@
   - [重新校准小车底盘IMU]($nodebb/topic/113.md)
   - [小强系统镜像]($nodebb/topic/232.md)
   - [如何恢复小强的软件包]($nodebb/topic/686.md)
+  - [如何在重装系统后恢复xiaoqiang设置]($nodebb/topic/2939.md)
+  - [如何获取伽利略证书]($nodebb/topic/630.md)
 
 ## 四. 其他
   - [Ubuntu设置静态IP]($nodebb/topic/171.md)
