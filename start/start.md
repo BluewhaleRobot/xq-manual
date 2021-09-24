@@ -1,101 +1,68 @@
-# <a id="start"></a>开始使用
+# 开始使用
+
 本章介绍平台的快速使用方法，如果您对ROS系统和Ubuntu系统不熟悉，请先阅读第二章的[教程一](../topic/26.html)。
 
-# <a id="network"></a>设置网络
+## 设置网络
 
 首先将小强的主机连接上电脑显示器（小强pro用户请利用附赠的HDMI到VGA转接头进行连接, 小强mini用户请直接使用vga）。小强的默认密码是xiaoqiang，请及时更改默认密码。进入系统设置好小强的wifi网络连接。推荐设置路由器使小强使用静态ip,[静态IP设置方法](../topic/171.html)，方便以后连接。
 
-
-# <a id="assemble"></a>产品组装
+## 产品组装
 
 小强的主要部分如下图所示
-<br>
+
 ![assemble image](/images/assemble.png)
-<br>
+
 将电池平放在主机前方空余区域（电池靠两个小黑块堵住），根据线标提示接上底盘电源线，安装好电脑主机wifi天线，摄像头和底层USB连接模块连接上主机的USB接口即可。
 
+xq5 的组装图如下
 
-# <a id="status"></a>状态检查
+![assemble image xq5](/images/xq5.jpg)
+
+## 远程连接
+
+机器人默认安装了VNC远程桌面程序，用户可以方便的通过远程访问机器人系统。
+
+[VNC下载](https://www.realvnc.com/en/connect/download/viewer/)
+
+![VNC](/images/VNC.png)
+
+安装软件后在软件的地址栏输入机器人ip地址即可访问。vnc密码和用户密码一样都是xiaoqiang。
+
+## 状态检查
 
 组装完成之后就可以开始使用小强了。打开小强主机开关，等待主机蓝色灯亮起。小强左侧电源数据显示正常（电池电压合理使用范围是10V以上，当电池电压小于10V时小强会自动关机）。
 
-通过ssh远程连接，其中xxx.xxx.xxx.xxx是小强的IP
-
-```bash
-ssh xiaoqiang@xxx.xxx.xxx.xxx
-```
+通过VNC远程连接，然后打开命令行终端(可以通Ctrl + Alt + T快捷键打开)。
 
 检查程序是否正常运行，执行以下指令
-```bash
-rostopic list
-```
-
-正常情况下会显示出当前的所有ROS topic.
 
 ```bash
-/ORB_SLAM/Camera
-/ORB_SLAM/Frame
-/camera_node/image_raw
-/orb_scale/scaleStatus
-/rosout
-/rosout_agg
-/system_monitor/report
-/tf
-/usb_cam/brightness
-/xqserial_server/Odom
-/xqserial_server/Power
+bwcheck
 ```
 
-如果没有正常显示topic，可以尝试重启service。
+这个指令会自动进行机器人软件和硬件的自检。正常输出如下
 
-```bash
-sudo service startup restart
-```
+![bwcheck](/images/bwcheck.png)
 
-查看系统状态
-```bash
-rostopic echo /system_monitor/report
-```
+根据硬件不同以上的程序输出可能不一样。黄色的警告可以忽略，红色的错误一般是比较重要的信息。可以根据错误信息对机器人进行调整。
 
-如果正常，则显示如下
-```bash
-imageStatus: True
-odomStatus: True
-orbStartStatus: False
-orbInitStatus: False
-orbScaleStatus: False
-brightness: 0
-power: 12.34432
-```
+## 远程遥控
 
-其中imageStatus表示摄像头是否工作正常。odomStatus表示底层驱动时候工作正常。orb相关的三个变量是视觉导航相关的状态，可以不用管（如果对这方面感兴趣可以在论坛里进行交流）。brightness是摄像头的亮度，power是当前电池的电压值，如果无法读取则是0.
+远程遥控可以通过机器人客户端进行操作。客户端的下载和使用参见此[教程](https://doc.bwbot.org/en/books-online/galileo-servicebot-doc/)。在开始进行开发前，建议先通过此教程了解和熟悉机器人的完整功能。
 
-# <a id="remote"></a>远程遥控
+![客户端界面](/images/client.png)
 
-通过ssh进行连接
+安装完成后，点击客户端左上角连接按钮，连接机器人。连接完成后可以通过WASD进行前后左右的遥控操作。可以多个按键同时操作以方便控制移动。上下方向键调整机器人速度。
 
-```bash
-ssh xiaoqiang@xxx.xxx.xxx.xxx
-```
+`如果发现机器人不能移动且之前的自检指令提示正常，则机器人可能触发避障。检查机器人红外传感器是否在亮，超声波传感器是否被阻挡，以及机器人急停按钮是否被按下。`
 
-启动遥控程序
-
-```bash
-rosrun nav_test control.py
-```
-
-现在就可以通过方向键来控制小强的移动了。空格键是停止。Ctrl + C 退出程序。
-
-# <a id="intro"></a>软件整体结构和说明
+## 软件整体结构和说明
 
 小强的软件构建于ROS之上。程序主要包含有底层驱动，导航算法，slam算法。
 对于机器人来说，软件是一个整体，各部分的依赖程度都比较高。为了方便管理，系统中的基础功能用一个service统一操作。也就是前文中提到的startup service。这个service会启动底层的驱动软件包和摄像头。
 startup软件包位于/home/xiaoqiang/Documents/ros/src/startup。系统启动时会自动启动这个服务。如果想要更改这个服务的内容，可以修改这个软件包内的launch文件。具体的操作请[参照这里](../topic/27.html)。
 系统的导航程序采用的是ROS自带的导航程序包。不过导航参数是根据小强自己的参数修改过的。导航参数对导航的性能表现影响很大，你也可以尝试自己修改参数以提高表现。
-slam算法采用的是ORB_SLAM，这个算法目前还无法用于实际的生产环境，但是使用效果也很不错。
-最后就是一些工具类软件了。比如控制小车移动的 nav_test control.py，显示系统状态的system monitor。
 
+## ROS入门手册
 
-# <a id="rosintro"></a>ROS入门手册
-
-[Learning ROS for Robotics Programming - Second Edition.pdf](http://pan.baidu.com/s/1ge6ffZt)。这本教程很基础、很全面，虽然以Hydro版本为例，但是也完全兼容kinetic版本，代码实例中只需将书中的Hydro字符串替换成kinetic即可。请重点阅读本书的第二章和第三章。
+[Learning ROS for Robotics Programming - Second Edition.pdf](http://pan.baidu.com/s/1ge6ffZt)。这本教程很基础、很全面，虽然以Hydro版本为例，但是也完全兼容kinetic，noetic版本，代码实例中只需将书中的Hydro字符串替换成即可。请重点阅读本书的第二章和第三章。
